@@ -1226,7 +1226,7 @@ a:hover {
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
 }
 .adv_card--glass {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.62);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.55);
@@ -1667,13 +1667,19 @@ a:hover {
   padding: 12px 16px;
   font-size: 0.95rem;
   font-family: inherit;
-  color: var(--text);
+  color: #fff;
   outline: none;
   transition: border-color 0.2s;
   resize: none;
 }
 .joinus_input::placeholder {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.35);
+}
+.joinus_input:-webkit-autofill,
+.joinus_input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0 1000px var(--border) inset;
+  transition: background-color 9999s ease;
 }
 .joinus_input:focus {
   border-color: var(--accent);
